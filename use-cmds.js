@@ -1,8 +1,8 @@
-const fs = require('node:fs');
-const path = require('node:path');
-const { REST } = require('@discordjs/rest');
-const { Routes } = require('discord.js');
-const { clientId, guildId, token } = require('./config.json');
+const fs = require("node:fs");
+const path = require("node:path");
+const { REST } = require("@discordjs/rest");
+const { Routes } = require("discord.js");
+const { clientId, guildId, token } = require("./config.json");
 
 
 
@@ -30,7 +30,7 @@ function getFiles(dir){
 
 
 let command = [];
-const commandFiles = getFiles('./bot_cmds');
+const commandFiles = getFiles('./cmds');
 
 for(const file of commandFiles) {
     const command = require(file)
