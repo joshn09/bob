@@ -18,7 +18,7 @@ function getFiles(dir){
                 ...commandFiles,
                 ...getFiles(`${dir}/$(file.name)`)
             ]
-        } else if(file.name.endsWith(".js")) {
+        } else if(file.name.endsWith('.js')) {
             commandFiles.push(`${dir}/$(file.name)`)
         }
     }
@@ -30,7 +30,7 @@ function getFiles(dir){
 
 
 let command = [];
-const commandFiles = getFiles("./cmds");
+const commandFiles = getFiles('./cmds');
 
 for(const file of commandFiles) {
     const command = require(file)
