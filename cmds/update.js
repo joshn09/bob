@@ -6,6 +6,7 @@ module.exports = {
             .setName('updates')
             .setDescription('shows updates made to bob!'),
 
+                
                 async execute(interaction) {
                     const updateEmbed = new EmbedBuilder()
                         .setTitle('Bob updates!')

@@ -1,31 +1,45 @@
-const { SlashCommandBuilder } = require('discord.js')
+const { SlashCommandBuilder, CommandInteractionOptionType } = require('discord.js')
 const axios = require('axios');
 
 module.exports = {
 
                 data: new SlashCommandBuilder()
                         .setName('sheetdb')
-                        .setDescription('spreadsheet api!'),
-            
+                        .setDescription('spreadsheet api!')
+                            
+                            .addUserOption(option =>
+                                option  .setName('user')
+                                        .setDescription('Usernamae')
+                                        .setRequired(true)
+ 
+                            )
+                            .addStringOption(option =>
+                                option  .setName('medal')
+                                        .setDescription('User medal')
+                                        .setRequired(true)
+
+                                            .addChoices(
+                                                { name: `Orden Svyatogo Georgiya`, value: 'Orden Svyatogo Georgiya'},
+                                                { name: `Medal Ubiytsy`, value: 'Medal Ubiytsy'},
+                                            )
+                            ),
+
+
                             async execute(interaction) {
                                 
-                                const id = interaction.options.getInteger('id');
-                                const name = interaction.options.getString('name');
-                                const rank = interaction.options.getString('rank');
+                                const user = interaction.options.getUser('user');
                                 const medal = interaction.options.getString('medal');
-        
+
                             
-                                axios.post('https://sheetdb.io/api/v1/jg3hu8lkr7fad', {
+                                axios.post('https://sheetdb.io/api/v1/wx9g3cmpktv6a', {
                                     data: {
-                                        discordID: `${id}`,
-                                        name: `${name}`,
-                                        rank: `${rank}`,
-                                        medal: `${medal}`
+                                        USERNAME: `${user.username}`,
+                                        MEDAL: `${medal}`,
                                     }
         
                                 })
         
-                                interaction.reply('### sheet api updated!');
+                                await interaction.reply('### sheet api updated!');
                             }
  }
             
