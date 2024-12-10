@@ -6,7 +6,7 @@ module.exports = {
             .setName('goon')
             .setDescription('replies to the user'),
 
-            async execute(interaction) {
-                interaction.reply(` Need help? ${interaction.user.username}`);
-            }
+                async execute(interaction) {
+                    interaction.reply(` Need help? ${interaction.user.username}`);
+                }
 }

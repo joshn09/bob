@@ -7,25 +7,25 @@ module.exports = {
                         .setName('sheetdb')
                         .setDescription('spreadsheet api!'),
             
-                        async execute(interaction) {
+                            async execute(interaction) {
+                                
+                                const id = interaction.options.getInteger('id');
+                                const name = interaction.options.getString('name');
+                                const rank = interaction.options.getString('rank');
+                                const medal = interaction.options.getString('medal');
+        
                             
-                            const id = interaction.options.getInteger('id');
-                            const name = interaction.options.getString('name');
-                            const rank = interaction.options.getString('rank');
-                            const medal = interaction.options.getString('medal');
-    
-                        
-                            axios.post('https://sheetdb.io/api/v1/jg3hu8lkr7fad', {
-                                data: {
-                                    discordID: `${id}`,
-                                    name: `${name}`,
-                                    rank: `${rank}`,
-                                    medal: `${medal}`
-                                }
-    
-                            })
-    
-                            interaction.reply('### sheet api updated!');
-                        }
+                                axios.post('https://sheetdb.io/api/v1/jg3hu8lkr7fad', {
+                                    data: {
+                                        discordID: `${id}`,
+                                        name: `${name}`,
+                                        rank: `${rank}`,
+                                        medal: `${medal}`
+                                    }
+        
+                                })
+        
+                                interaction.reply('### sheet api updated!');
+                            }
  }
             

@@ -6,8 +6,8 @@ module.exports = {
             .setName('info')
             .setDescription('info about bobs cousin!'),
 
-            async execute(interaction) {
-                // await
-                interaction.reply(`## I'm bobs cousin, nice to meet you all!`);
-            }
+                async execute(interaction) {
+                    // await
+                    interaction.reply(`## I'm bobs cousin, nice to meet you all!`);
+                }
 }
