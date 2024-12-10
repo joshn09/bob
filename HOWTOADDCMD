@@ -9,7 +9,7 @@ module. exports = {
 
     data: new SlashCommandBuilder()
 
-        .addName: 'blah blah blah'
+        .addName: 'blah blah blah' // No Capital letters!!!
         .addDescription: 'meh meh meh'
 
             // to execute the command in discord.
