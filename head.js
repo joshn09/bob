@@ -1,3 +1,7 @@
+
+// NEVER TOUCH WITH UR DEGENERATE HANDS THIS ACIENT CODE!!!!
+
+
 const { token } = require("./config.json");
 // dont remove any arguments below!!!!
 const {Client, Events, GatewayIntentBits, SlashCommandBuilder, Collection } = require("discord.js");

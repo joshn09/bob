@@ -7,6 +7,6 @@ module.exports = {
             .setDescription('replies to the user'),
 
                 async execute(interaction) {
-                    interaction.reply(` Need help? ${interaction.user.username}`);
+                  await interaction.reply(` Need help? ${interaction.user.username}`);
                 }
 }

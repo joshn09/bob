@@ -1,0 +1,23 @@
+
+// copy and paste this cmd line, If ur going to add a cmd to the bot!
+
+// const { SlashCommandBuilder } = require('discord.js')
+
+/*
+
+module. exports = {
+
+    data: new SlashCommandBuilder()
+
+        .addName: 'blah blah blah'
+        .addDescription: 'meh meh meh'
+
+            // to execute the command in discord.
+
+                async execute(interaction) {
+                    await
+                }
+}
+
+
+*/

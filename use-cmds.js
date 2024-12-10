@@ -16,18 +16,15 @@ function getFiles(dir){
         if(file.isDirectory()){
             commandFiles = [
                 ...commandFiles,
-                ...getFiles(`${dir}/$(file.name)`)
+                ...getFiles(`${dir}/${file.name}`)
             ]
         } else if(file.name.endsWith('.js')) {
-            commandFiles.push(`${dir}/$(file.name)`)
+            commandFiles.push(`${dir}/${file.name}`)
         }
     }
 
     return commandFiles;
 }
-
-
-
 
 let command = [];
 const commandFiles = getFiles('./cmds');
