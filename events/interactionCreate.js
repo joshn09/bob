@@ -16,7 +16,6 @@ module.exports = {
                         try {
                             if(interaction.replied) return;
                             command.execute(interaction);
-                            interaction.reply('bob successfully runned command!');
                         } catch (error) {
                             console.error(error);
                         } 

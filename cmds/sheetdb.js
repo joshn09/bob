@@ -25,7 +25,7 @@ module.exports = {
         
                                 })
         
-                                await interaction.reply('### sheet api updated!');
+                                interaction.reply('### sheet api updated!');
                             }
  }
             

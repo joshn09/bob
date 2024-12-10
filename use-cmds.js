@@ -1,6 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
-const { REST } = require("@discord.js/rest");
+const { REST } = require("@discordjs/rest");
 const { Routes } = require("discord.js");
 const { clientId, guildId, token } = require("./config.json");
 
@@ -26,18 +26,18 @@ function getFiles(dir){
     return commandFiles;
 }
 
-let command = [];
+let commands = [];
 const commandFiles = getFiles('./cmds');
 
 for(const file of commandFiles) {
     const command = require(file)
-    commands.push(command.date.toJSON());
+    commands.push(command.data.toJSON());
 }
 
 
 
 const rest = new REST({ version:'10' }).setToken(token);
 
-rest.put(Routes.applicationGuildCommand(clientId, guildId), { body: commands })
+rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
     .then(() => console.log('Successfully registered commands!'))
     .catch(console.error);
