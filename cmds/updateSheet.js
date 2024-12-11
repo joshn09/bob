@@ -30,10 +30,11 @@ module.exports = {
                                 const user = interaction.options.getUser('user');
                                 const medal = interaction.options.getString('medal');
                                 
-                                axios.patch(`https://sheetdb.io/api/v1/wx9g3cmpktv6a/MEDALS/${user}`, {
+                                axios.patch(`https://sheetdb.io/api/v1/wx9g3cmpktv6a/MEDALS/${medal}`, {
 
                                         data: {
                                             MEDALS: `${medal}`,
+                                            USERNAME: `${user.username}`,
                                         }
 
                                     }),
