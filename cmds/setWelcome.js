@@ -7,7 +7,7 @@ const Guild = require('../models/guild')
 module.exports = {
 
     data: new SlashCommandBuilder()
-            .setName('set-welcome-channel')
+            .setName('set-channel')
             .setDescription('Set the welcome channel for the server!')
 
                 .addChannelOption(option => 

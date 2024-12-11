@@ -8,7 +8,7 @@ const Guild = require('../models/guild')
 module.exports = {
 
     data: new SlashCommandBuilder()
-            .setName('set-welcome-role')
+            .setName('set-role')
             .setDescription('Set the welcome role for the server!')
 
                 .addRoleOption(option => 

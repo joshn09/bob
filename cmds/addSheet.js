@@ -4,8 +4,8 @@ const axios = require('axios');
 module.exports = {
 
                 data: new SlashCommandBuilder()
-                        .setName('sheetdb')
-                        .setDescription('spreadsheet api!')
+                        .setName('addsheet')
+                        .setDescription('add users to the spreadsheet!')
                             
                             .addUserOption(option =>
                                 option  .setName('user')
@@ -15,7 +15,7 @@ module.exports = {
                             )
                             .addStringOption(option =>
                                 option  .setName('medal')
-                                        .setDescription('User medal')
+                                        .setDescription('User medals')
                                         .setRequired(true)
 
                                             .addChoices(
