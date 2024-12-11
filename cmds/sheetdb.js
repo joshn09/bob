@@ -29,17 +29,16 @@ module.exports = {
                                 
                                 const user = interaction.options.getUser('user');
                                 const medal = interaction.options.getString('medal');
-
-                            
+                                
                                 axios.post('https://sheetdb.io/api/v1/wx9g3cmpktv6a', {
                                     data: {
+                                        A: 'a',
                                         USERNAME: `${user.username}`,
-                                        MEDAL: `${medal}`,
+                                        MEDALS: `${medal}`,
                                     }
-        
-                                })
-        
-                                await interaction.reply('### sheet api updated!');
+                                }),
+
+                                await interaction.reply(`${user} has been added to the sheet!`);
                             }
  }
             
