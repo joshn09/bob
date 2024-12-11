@@ -1,3 +1,7 @@
+
+// CONNECTED TO OUR WELCOME-ROLE COMMAND !!!!
+
+
 const { SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require('discord.js')
 const Guild = require('../models/guild')
 

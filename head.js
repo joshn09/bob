@@ -4,7 +4,7 @@
 
 const { token } = require("./config.json");
 // dont remove any arguments below!!!!
-const {Client, Events, GatewayIntentBits, SlashCommandBuilder, Collection } = require("discord.js");
+const {Client, Events, GatewayIntentBits, SlashCommandBuilder, Collection } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
 

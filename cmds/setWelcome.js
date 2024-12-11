@@ -1,3 +1,6 @@
+
+// CONNECTED TO OUR WELCOME-CHANNEL COMMAND !!!!
+
 const { SlashCommandBuilder, PermissionFlagsBits, ChannelType } = require('discord.js')
 const Guild = require('../models/guild')
 

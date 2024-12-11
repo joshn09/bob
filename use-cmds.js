@@ -5,7 +5,6 @@ const { Routes } = require("discord.js");
 const { clientId, guildId, token } = require("./config.json");
 
 
-
 function getFiles(dir){
     const files = fs.readdirSync(dir, {
         withFileTypes: true
