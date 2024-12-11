@@ -2,6 +2,6 @@ module.exports = {
     name: 'ready',
     once: true,
     async execute(client) {     
-            console.log(`# ${client.user.username} is succesfully awake!`);
+            console.log(`${client.user.username} is succesfully awake!`);
     }
 }
