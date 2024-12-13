@@ -26,19 +26,26 @@ module.exports = {
 
 
                             async execute(interaction) {
-                                
+
+
                                 const user = interaction.options.getUser('user');
                                 const medal = interaction.options.getString('medal');
                                 
-                                axios.post('https://sheetdb.io/api/v1/wx9g3cmpktv6a', {
-                                    data: {
-                                        A: 'a',
-                                        USERNAME: `${user.username}`,
-                                        MEDALS: `${medal}`,
-                                    }
-                                }),
+                                try {
+                                    
+                                    axios.post('https://sheetdb.io/api/v1/wx9g3cmpktv6a', {
+                                        data: {
+                                            USERNAME: `${user.username}`,
+                                            MEDALS: `${medal}`,
+                                        }
+                                    })
 
-                                await interaction.reply(`${user} has been added to the sheet!`);
+                                    await interaction.reply(`${user.username} has successfully added sheet with the medal: ${medal}!`);
+                
+                                } catch (error) {
+                        
+                                    await interaction.reply('-# An error occurred while updating the sheet. Please contact the developers!');
+                                }
+
                             }
  }
-            
