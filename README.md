@@ -1,5 +1,6 @@
 # Nevel - The Napoleonic Wars Russia Community Discord Bot Redux
 
+![repository icon](Bob-icon.png)
 ## About
 Nevel is an advanced Discord bot designed to enhance the experience and management of the Napoleonic Wars Russia community's Discord server. This project is a redux version, building upon previous iterations to offer improved features and functionality.
 
