@@ -1,4 +1,4 @@
-# Nevel - The Napoleonic Wars Russia Community Discord Bot Redux
+# Nevel - The NW Russia Community Discord Bot Redux!
 
 ![repository icon](Bob-icon.png)
 ## About
