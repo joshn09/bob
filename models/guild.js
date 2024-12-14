@@ -14,6 +14,8 @@ const Guild = sequelize.define('guild', {
         type: Sequelize.STRING,
         allowNull: true
     }
-})
+}) 
+// WOOOOOO GO DATABASE
+// TRULY THE 22ND CENTURY
 
 module.exports = Guild;

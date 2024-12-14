@@ -1,4 +1,3 @@
-
 // NEVER TOUCH WITH UR DEGENERATE HANDS THIS ACIENT CODE!!!!
 
 const {Client, Collection, GatewayIntentBits} = require('discord.js')
@@ -27,7 +26,6 @@ module.exports = {
     }
       
 }
-
 
     function getFiles(dir) {
     const files = fs.readdirSync(dir, {

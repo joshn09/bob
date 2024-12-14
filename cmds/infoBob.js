@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder, Embed } = require('discord.js')
 
 module.exports = {
 
@@ -28,12 +28,11 @@ module.exports = {
                         
                 
 
-        await interaction.reply( { embeds: [embed] });
+                await interaction.reply( { embeds: [embed] });
                 }
 }
 
 
-// push check update
 // The Old Embed for Bob 1.0.0 OG
 
 /* client.on('interactionCreate', (interaction) => {
@@ -63,8 +62,3 @@ module.exports = {
         interaction.reply( { embeds: [embed] });
     }
 });*/
-
-
-
-
-// skskisksskasdoijkasdjiokasdjoidsaojiadsojiadsadsijo

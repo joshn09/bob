@@ -15,7 +15,7 @@ module.exports = {
                     option .setName('role')
                             .setDescription('Role to give new members!')
                 )
-                    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+                    .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
                 async execute(interaction) {
                     await interaction.deferReply({ephemeral: true});

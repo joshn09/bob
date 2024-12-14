@@ -15,7 +15,7 @@ module.exports = {
                             .setDescription('Channel to sent welcome messages.')
                             .addChannelTypes(ChannelType.GuildText)
                 )
-                    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
+                    .setDefaultMemberPermissions(PermissionFlagsBits.BanMembers),
 
                 async execute(interaction) {
                     await interaction.deferReply({ephemeral: true})
