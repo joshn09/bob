@@ -1,3 +1,6 @@
+
+// DONT TOUCH THIS ACIENT CODE, BOB DATABASE
+
 const Guild = require("./models/guild");
 
 // un-comment if changed was made to ../models./guild.js

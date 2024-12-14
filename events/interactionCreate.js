@@ -15,12 +15,17 @@ module.exports = {
                     let command = client.commands.get(interaction.commandName); 
                         try {
                             if(interaction.replied) return;
+
                             command.execute(interaction);
+
                         } catch (error) {
                             console.error(error);
                         } 
                 }
+
+                
     }
+      
 }
 
 

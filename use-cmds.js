@@ -29,7 +29,7 @@ let commands = [];
 const commandFiles = getFiles('./cmds');
 
 for(const file of commandFiles) {
-    const command = require(file)
+    const command = require(file);
     commands.push(command.data.toJSON());
 }
 
