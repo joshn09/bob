@@ -28,7 +28,7 @@ module.exports = {
             browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
         
-            await page.goto('https://chat-app-f2d296.zapier.app/', { waitUntil: 'load', timeout: 15000 });
+            await page.goto('https://chat-app-f2d296.zapier.app/', { waitUntil: 'load', timeout: 30000 });
         
             const inputExists = await page.$(inputSelector);
             const responseExists = await page.$(responseSelector);
@@ -44,7 +44,7 @@ module.exports = {
             await page.type(inputSelector, prompt);
             await page.keyboard.press('Enter');
         
-            await new Promise(resolve => setTimeout(resolve, 15000)); // Adjust delay if needed
+            await new Promise(resolve => setTimeout(resolve, 30000)); // Adjust delay if needed
         
             const responses = await page.$$eval(responseSelector, (elements) =>
                 elements.map((element) => element.textContent.trim())
