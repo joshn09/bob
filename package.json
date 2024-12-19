@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "head.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "prestart": "bash setup.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Josh, Adler, Freg",
