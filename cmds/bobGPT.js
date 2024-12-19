@@ -6,21 +6,21 @@ module.exports = {
         .setName('ask-bob')
         .setDescription('Ask Bob a question')
         .addStringOption((option) =>
-            option.setName('prompt').setDescription('Question for Bob').setRequired(true)
+            option.setName('question').setDescription('Question for Bob').setRequired(true)
         ),
 
     async execute(interaction) {
 
+
         try {
             await interaction.deferReply({ ephemeral: false });
-            await interaction.editReply('Processing your question, please wait...');
         } catch (err) {
             console.error('Failed to defer interaction:', err);
             return;
         }
         
-        const prompt = interaction.options.getString('prompt');
-        const inputSelector = 'textarea[placeholder="automate"]';
+        const prompt = interaction.options.getString('question');
+        const inputSelector = 'textarea[placeholder="question"]';
         const responseSelector = 'div[data-testid="bot-message"]';
         let browser;
         
@@ -28,7 +28,7 @@ module.exports = {
             browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
         
-            await page.goto('https://chat-app-f2d296.zapier.app/', { waitUntil: 'load', timeout: 30000 });
+            await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 15000 });
         
             const inputExists = await page.$(inputSelector);
             const responseExists = await page.$(responseSelector);
@@ -44,7 +44,7 @@ module.exports = {
             await page.type(inputSelector, prompt);
             await page.keyboard.press('Enter');
         
-            await new Promise(resolve => setTimeout(resolve, 30000)); // Adjust delay if needed
+            await new Promise(resolve => setTimeout(resolve, 15000)); // Adjust delay if needed
         
             const responses = await page.$$eval(responseSelector, (elements) =>
                 elements.map((element) => element.textContent.trim())
@@ -54,8 +54,8 @@ module.exports = {
             if (!responses || responses.length === 0) {
                 return await interaction.editReply('Bob did not provide a proper response. Please try again later.');
             }
-        
-            // Embed with user's question and bot's response
+
+
             const embed = new EmbedBuilder()
                 .setTitle('bobGPT')
                 .setColor(0x120a8f)
