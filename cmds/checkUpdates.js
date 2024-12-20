@@ -1,23 +1,25 @@
-const { SlashCommandBuilder, EmbedBuilder, Embed } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder, Embed, PermissionFlagsBits } = require('discord.js')
 
 module.exports = {
 
     data: new SlashCommandBuilder()
             .setName('checkupdates')
-            .setDescription('updates made to bob!'),
+            .setDescription('updates made to bob!')
 
-                
+                // permission that user MUST have to use this command!
+                .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers),
+
                 async execute(interaction) {
 
                     const updateEmbd = new EmbedBuilder()
 
                         .setTitle('Bob updates redux!')
-                        .setDescription('Let developers fully access creating/updating commands, events, features to bob!\n-# Added: 12/10/2024 \nDevelopers can now fully automatically add/update users to the sheet automatically!\n-# Added: 12/13/2024')
+                        .setDescription('* Let developers fully organized create/update commands, events, features to bob!\n-# Added: 12/10/2024 \n* Developers can now fully automatically add/update users to the medal sheet automatically!\n-# Added: 12/13/2024 \n* bobGPT - very own built in chatgpt!\n-# Added:12/14/2024')
                         .setColor(0x000f89)
 
-                        .setAuthor({name: 'Bob Developers', iconURL: 'https://cdn.discordapp.com/attachments/1315911289905873007/1317059557004021790/qupvwt1550828488-296410940-removebg-preview.png?ex=675d4ecc&is=675bfd4c&hm=28424807a330bd7391cee59027308cc960e127d8a63e614c3c73991c2767a3cd&'})
+                        .setAuthor({name: 'Bob Developers', iconURL: 'https://cdn.discordapp.com/attachments/1315911289905873007/1318087956111691806/3dgifmaker62340_online-video-cutter.com.gif?ex=6765a9d1&is=67645851&hm=da8c95aed80a50aedd1ba1b2ba841461ed28e01481a9ef59d3abe76d8eac4bb0&'})
                         .setFooter({text: 'pls fund us germ <3'})
-                        .setThumbnail('https://cdn.discordapp.com/attachments/1315911289905873007/1315911875124527124/maxwell-cat.gif?ex=675d166f&is=675bc4ef&hm=98bf417ee6e0fbaac30efd1412cce2b88af04d94128a3e2469a343ce960ea018&')
+                        .setThumbnail('https://cdn.discordapp.com/attachments/1315911289905873007/1319507523283189771/3dgifmaker00013.gif?ex=676636a4&is=6764e524&hm=47f44ce85e8bc9f5d7e3f146d4a80d60a425497df136d3f4e2dcc44c8f89bcba&')
                         
 
                             .addFields(

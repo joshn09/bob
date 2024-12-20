@@ -4,7 +4,7 @@ module.exports = {
 
     data: new SlashCommandBuilder()
             .setName('info')
-            .setDescription('info about bobs cousin!'),
+            .setDescription('info about bob!'),
 
                 async execute(interaction) {
                     // await

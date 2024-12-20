@@ -8,6 +8,7 @@ module.exports = {
         .addStringOption((option) =>
             option.setName('question').setDescription('Question for Bob').setRequired(true)
         ),
+        
 
     async execute(interaction) {
 
@@ -20,25 +21,17 @@ module.exports = {
         }
         
         const prompt = interaction.options.getString('question');
-        const inputSelector = 'textarea[placeholder="question"]';
+        const inputSelector = '[data-testid="user-prompt"]';
         const responseSelector = 'div[data-testid="bot-message"]';
+
         let browser;
         
         try {
             browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
         
-            await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 15000 });
-        
-            const inputExists = await page.$(inputSelector);
-            const responseExists = await page.$(responseSelector);
+            await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 15000 })
 
-                if (!inputExists) {
-                    throw new Error(`Input selector not found: ${inputSelector}`);
-                }
-                if (!responseExists) {
-                    console.warn(`Response selector not found yet: ${responseSelector}`);
-                }
 
 
             await page.type(inputSelector, prompt);
@@ -52,7 +45,7 @@ module.exports = {
 
         
             if (!responses || responses.length === 0) {
-                return await interaction.editReply('Bob did not provide a proper response. Please try again later.');
+                return await interaction.editReply('Bob could not provide a proper response. Please try again later.');
             }
 
 
