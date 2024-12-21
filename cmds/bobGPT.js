@@ -30,14 +30,14 @@ module.exports = {
             browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
         
-            await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 15000 })
+            await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 20000 })
 
 
 
             await page.type(inputSelector, prompt);
             await page.keyboard.press('Enter');
         
-            await new Promise(resolve => setTimeout(resolve, 15000)); // Adjust delay if needed
+            await new Promise(resolve => setTimeout(resolve, 20000)); // Adjust delay if needed
         
             const responses = await page.$$eval(responseSelector, (elements) =>
                 elements.map((element) => element.textContent.trim())

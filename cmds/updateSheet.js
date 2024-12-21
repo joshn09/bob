@@ -98,7 +98,7 @@ module.exports = {
                                         // Re-add the updated medal with the new class
                                         const postResponse = await axios.post(endpoint, {
                                             data: [
-                                                {
+                                                {  
                                                     USERNAME: user.username,
                                                     MEDALS: medal,
                                                     CLASS: classMedal,

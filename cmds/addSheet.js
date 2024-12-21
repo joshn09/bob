@@ -80,7 +80,7 @@ module.exports = {
 
                                 try {
 
-                                    axios.post('https://sheetdb.io/api/v1/eqxuuefaj4hmr', {       
+                                    axios.post('https://sheetdb.io/api/v1/eqxuuefaj4hmr', { 
                                                 USERNAME: user.username,
                                                 MEDALS: medal,
                                                 CLASS: classMedal,                                
