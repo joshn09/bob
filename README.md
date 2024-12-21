@@ -1,6 +1,7 @@
 # bob - The NW Russia Community Discord Bot Redux!
 
-![repository icon](Bob-icon.png)
+<img src="https://github.com/user-attachments/assets/c1f616be-32b2-4ba8-931d-fffa20bf6fc0" alt="3dgifmaker00013" style="width: 500px; height: auto;">
+
 ## About
 bob is an advanced Discord bot designed to enhance the experience and management of the Napoleonic Wars Russia community's Discord server. This project is a redux version, building upon previous iterations to offer improved features and functionality.
 
