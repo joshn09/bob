@@ -1,14 +1,18 @@
 # bob - The NW Russia Community Discord Bot Redux!
 
-<img src="https://github.com/user-attachments/assets/c1f616be-32b2-4ba8-931d-fffa20bf6fc0" alt="3dgifmaker00013" style="width: 500px; height: auto;">
+<img src="https://github.com/user-attachments/assets/c1f616be-32b2-4ba8-931d-fffa20bf6fc0" alt="3dgifmaker00013" style="width: 350px; height: auto;">
 
 ## About
-bob is an advanced Discord bot designed to enhance the experience and management of the Napoleonic Wars Russia community's Discord server. This project is a redux version, building upon previous iterations to offer improved features and functionality.
+Bob is an advanced Discord bot designed to enhance the experience and management of the Napoleonic Wars Russia community's Discord server. This project is a redux version, building upon previous iterations to offer improved features and functionality.
 
 ## Key Features
-- **Intelligent Modeling**: Nevel utilizes the latest and most sophisticated models to provide accurate and insightful information about the context of the repository.
-- **Comprehensive Repo Summary**: The bot offers a detailed summary of the project, making it easier for users to quickly understand its purpose and available features.
-- **Modular Design**: Nevel is built with a modular architecture, allowing for the efficient management of various aspects of the Discord community through different modules and utilities.
+- **Intelligent Modeling:** Leverages advanced models to deliver accurate and insightful information tailored to the context of the repository.
+
+- **Comprehensive Repository Summary:** Provides a detailed overview of the project, enabling users to quickly grasp its purpose and features.
+
+- **Modular Design:** Built with a modular architecture, Nevel facilitates efficient management of various aspects of the Discord community through dedicated modules and utilities.
+
+- **Specialized for Napoleonic Wars Russia:** Incorporates unique features specifically designed for the administration of communities focused on the Napoleonic Wars, enhancing user engagement and interaction.
 
 ## Installation
 1. **Clone the Repository**:
@@ -21,9 +25,11 @@ bob is an advanced Discord bot designed to enhance the experience and management
    npm install
    ```
 3. **Configure the Bot**:
-   - Rename the `config.example.json` file to `config.json`.
-   - Update the configuration parameters with your Discord bot token and other necessary settings.
+   ```
+   config.json / discord server
+   ```
 4. **Start the Bot**:
    ```
-   npm start
+   node use-cmds.js / if u made changes to cmds
+   node .
    ```
