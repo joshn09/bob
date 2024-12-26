@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, EmbedBuilder, Embed } = require('discord.js')
+const { SlashCommandBuilder, EmbedBuilder, Embed, ButtonBuilder, ButtonStyle, Component, ActionRowBuilder } = require('discord.js')
 
 module.exports = {
 
@@ -26,9 +26,16 @@ module.exports = {
               
                         .setThumbnail('https://media.discordapp.net/attachments/1315281543878541376/1317471086123814972/2024_12_08_0oc_Kleki.png?ex=675ece10&is=675d7c90&hm=a50f5af5033a18f96c7fd0088349134cdb367e5a39b3402b667e645dc2cc339f&=&format=webp&quality=lossless&width=394&height=525')
                         
-                
+            
+                        const communityLink = new ButtonBuilder()
+                        .setLabel('NW Community!')
+                        .setURL('https://discord.gg/pPfSH6ZsEc')
+                        .setStyle(ButtonStyle.Link);
 
-                await interaction.reply( { embeds: [embed] });
+                            const buttons = new ActionRowBuilder()
+                                .addComponents(communityLink)
+
+                await interaction.reply( { embeds: [embed], components: [buttons] });
                 }
 }
 

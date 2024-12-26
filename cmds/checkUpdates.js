@@ -22,9 +22,7 @@ module.exports = {
                         .setThumbnail('https://cdn.discordapp.com/attachments/1315911289905873007/1319507523283189771/3dgifmaker00013.gif?ex=676636a4&is=6764e524&hm=47f44ce85e8bc9f5d7e3f146d4a80d60a425497df136d3f4e2dcc44c8f89bcba&')
                         
 
-                            .addFields(
-                                {name: 'NW community!', value: '[Imperatorskaya Armiya](https://www.roblox.com/communities/7528791/Imp-ratorskaya-Armiya#!/about)'},
-                            )
+    
 
                             await interaction.reply({embeds: [updateEmbd]})
                 }   
