@@ -104,7 +104,7 @@ module.exports = {
                         });
     
                         if (postResponse.status === 201) {
-                            await interaction.editReply(`${user.username} class updated to the sheet!\n\`\`\`diff\n# Medal: ${medal}\n+ Updated: ${classMedal}\`\`\``);
+                            await interaction.editReply(`${user.username} updated to the sheet!\n\`\`\`diff\n# Medal: ${medal}\n+ Updated: ${classMedal}\`\`\``);
                         } else {
                             await interaction.editReply('Failed to update the class. Please try again.');
                         }
