@@ -82,7 +82,11 @@ module.exports = {
                 const matchingEntry = existingData.find(entry => entry.MEDALS === medal);
     
                 if (matchingEntry) {
+                    
                     // Delete the specific medal row for the user
+                     
+                        // Can't axios.patch => premium feature lol
+
                     const deleteResponse = await axios.delete(`${endpoint}`, {
                         data: {
                             column: 'MEDALS',
