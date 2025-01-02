@@ -21,6 +21,8 @@ module.exports = {
         const emeticonGuardC = '<:guardC:1323979970158268527>';
         const emeticonGuard1 = '<:guard1:1323979509422358528>';
         const emeticonGuardCrown = '<:crownguard:1323982819512418324>';
+        const emeticonMorgan = '<:morgan:1324232909753683978>';
+        const emeticonSiver = '<:siver:1324233488953769986>';
 
         // Array of embeds
         const embeds = [
@@ -62,15 +64,15 @@ module.exports = {
                                         name: `${emeticonGuardA} __**[BGR] BRIGADA BAGRATION**__`, value: `-# ${emeticonGuard1} Brigada Bagration is the *green* Brigade within the Imperial Guard, serving as the bulk of the Corps and essential backbone. This Brigade consists of the **Kursanty Mushketery**, or Cadets and the **Finlandskiy Leyb-Yegerskiy Polk**, the Primary Regiment within the Brigade.`,
                                     },
                                     {
-                                        name: `${emeticonGuardB} __**[NEV] BRIGADA NEVEROVSKY**__`, value: `-# ${emeticonGuard} Brigada Neverovsky conists of the Combat tested men of the **Pavlovskiy Grenadierskiy Polk**, now elevated as a regiment of the Imperskoy Gvardii and contains one of Russia's oldest Imperial Guard Formations, the Infamous **Izamilovskiy Leib-Gvardiy Polk** Serving as the Speicalist Bulk of the Imperial Guard, these soldiers have proven time and time again their worth on the battlefield.`,
+                                        name: `${emeticonGuardB} __**[NEV] BRIGADA NEVEROVSKY**__`, value: `-# ${emeticonGuard1} Brigada Neverovsky conists of the Combat tested men of the **Pavlovskiy Grenadierskiy Polk**, now elevated as a regiment of the Imperskoy Gvardii and contains one of Russia's oldest Imperial Guard Formations, the Infamous **Izamilovskiy Leib-Gvardiy Polk** Serving as the Speicalist Bulk of the Imperial Guard, these soldiers have proven time and time again their worth on the battlefield.`,
                                     },
                                     {
-                                        name: `${emeticonGuardC} __**[KON] BRIGADA KONSTANTIN**__`, value: `-# ${emeticonGuard1} The Crème de-la-crème of all Russia, these veteran-elite soldiers have proven themselves in the thick of combat, coming out on-top of their foe in almost every engagement they face Only the finest within the Corps can find their place amongst the best of Russia. This Brigade contains Russia's **oldest** Regiments in service; The **Preobrazhenskiy Leib-Gvardiy Polk** and the **Semyonovsky Leyb-Gvardi Polk** both formed by *Peter the Great* to serve as his personal guard.`,
+                                        name: `${emeticonGuardC} __**[KON] BRIGADA KONSTANTIN**__`, value: `-# ${emeticonGuard} The Crème de-la-crème of all Russia, these veteran-elite soldiers have proven themselves in the thick of combat, coming out on-top of their foe in almost every engagement they face Only the finest within the Corps can find their place amongst the best of Russia. This Brigade contains Russia's **oldest** Regiments in service; The **Preobrazhenskiy Leib-Gvardiy Polk** and the **Semyonovsky Leyb-Gvardi Polk** both formed by *Peter the Great* to serve as his personal guard.`,
                                     },
                                 )
                                 
                                 .addFields(
-                                    {name: `${emeticonGuard} __GVARDIA ENLISTMENT__ ${emeticonGuardCrown}`, value: `\n${emeticonGuardA} [BGR] BRIGADA BAGRATION\n\n*[-Finlandskiy Leyb-Yegerskiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919474070556733)*\n*[-Kursanty Mushketery(__AS/OC__)](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919474070556733)*\n\n${emeticonGuardB} [NEV] BRIGADA NEVEROVSKY\n\n*[-Pavlovskiy Grenadierskiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919603846385686)*\n*[-Izamilovskiy Leib-Gvardiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919603846385686)*\n\n${emeticonGuardC} [KON] BRIGADA KONSTANTIN\n\n*[-Preobrazhenskiy Leib-Gvardiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919741893644301)*\n*[-Semyonovsky Leyb-Gvardi Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919741893644301)*`},
+                                    {name: `${emeticonGuard1} __GVARDIA ENLISTMENT__ ${emeticonGuardCrown}`, value: `-# ${emeticonSiver} brigade has **AS/OC** division. \n${emeticonGuardA} **[BGR] BRIGADA BAGRATION** ${emeticonSiver}\n\n*[Finlandskiy Leyb-Yegerskiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919474070556733)*\n*[Kursanty Mushketery](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919474070556733)*\n\n${emeticonGuardB} **[NEV] BRIGADA NEVEROVSKY** \n\n*[Pavlovskiy Grenadierskiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919603846385686)*\n*[Izamilovskiy Leib-Gvardiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919603846385686)*\n\n${emeticonGuardC} **[KON] BRIGADA KONSTANTIN** \n\n*[Preobrazhenskiy Leib-Gvardiy Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919741893644301)*\n*[Semyonovsky Leyb-Gvardi Polk](https://discord.com/channels/1177721548874985512/1177721549516722292/1286919741893644301)*`},
                                 )
 
                             .setColor(0x7fffbf)
@@ -97,6 +99,8 @@ module.exports = {
                     .setLabel('NW community!')
                     .setURL('https://discord.gg/pPfSH6ZsEc')
                     .setStyle(ButtonStyle.Link);
+
+                    const timezoneCheck = new ButtonBuilder()
 
         // Action row with buttons
         const buttons = () => new ActionRowBuilder()
