@@ -12,7 +12,7 @@ module.exports = {
         ),
     async execute(interaction) {
         try {
-            await interaction.deferReply({ ephemeral: true });
+            await interaction.deferReply({ ephemeral: false });
         } catch (err) {
             console.error('Failed to defer interaction:', err);
             return;
@@ -21,21 +21,23 @@ module.exports = {
         const prompt = interaction.options.getString('question');
         const userId = interaction.user.id; 
         const inputSelector = '[data-testid="user-prompt"]';
-        const responseSelector = 'div[data-testid="bot-message"]';
+        const responseSelector = '[data-testid="bot-message"]';
 
         let browser;
         
-
         try {
             browser = await puppeteer.launch({ headless: true });
             const page = await browser.newPage();
 
             await page.goto('https://bobgpt-21ebf1.zapier.app', { waitUntil: 'load', timeout: 10000 });
 
+            // Wait for the input selector to be available
+            await page.waitForSelector(inputSelector, { visible: true, timeout: 30000 });
+
             await page.type(inputSelector, prompt);
             await page.keyboard.press('Enter');
         
-            await new Promise(resolve => setTimeout(resolve, 15000)); 
+            await new Promise(resolve => setTimeout(resolve, 15000)); // Wait for response
 
             var responses = await page.$$eval(responseSelector, (elements) =>
                 elements.map((element) => element.textContent)
@@ -45,7 +47,7 @@ module.exports = {
                 return await interaction.editReply('Bob could not provide a proper response. Please try again later.');
             }
 
-            responses.shift();
+            responses.shift(); // Remove the first response if necessary
 
             userMemory[userId] = { question: prompt, response: responses.join('\n\n') };
 
