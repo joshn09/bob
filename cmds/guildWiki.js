@@ -14,6 +14,7 @@ module.exports = {
     async execute(interaction) {
 
         // Custom emojis!
+        // GUARD
         const emeticonGuardCorps = '<:Guard_Corps_2:1323975368222179380>';
         const emeticonGuard = '<:guard2:1323982821542334524>';
         const emeticonGuardA = '<:guardA:1323979507597709322>';
@@ -23,6 +24,21 @@ module.exports = {
         const emeticonGuardCrown = '<:crownguard:1323982819512418324>';
         const emeticonMorgan = '<:morgan:1324232909753683978>';
         const emeticonSiver = '<:siver:1324233488953769986>';
+
+            // 1Y 
+                
+                const emeticonOneYCorps = '<:oneYcorps:1325805654732177428>';
+                const emeticonOneY = '<:oneY:1325805662042853427>';
+                const emeticonGold = '<:gold:1325807942561304607>';
+                const emeticonSaint = '<:saint:1325805657399627856>';
+                const emeticonSaintLieb = '<:saint2:1325805659832193164>';
+                const emeticonTav = `<:tav:1325812582191337482>`;
+                const emeticonTavLieb = `<:tav2:1325805852053078056>`;
+                const emeticonRdl = `<:rdl:1325812579431485570>`;
+                const emeticonRdlLieb = `<:rdl2:1325812852015104092>`;
+                const emeticonSaintFlag = `<:saintFlag:1325812575325257820>`;
+                const emeticonTavFlag = `<:tavFlag:1325812573089693770>`;
+                const emeticonRdlFlag = `<:rdlFlag:1325812555075289118>`;
 
         // Array of embeds
         const embeds = [
@@ -80,7 +96,47 @@ module.exports = {
                                 .setFooter({text: `STOYAT DO SMERTI`, iconURL: 'https://media.discordapp.net/attachments/1315292407860039830/1323969030196822066/Gvardii_Legion.png?ex=677671be&is=6775203e&hm=e58bd4ae9a0a03159112e3365bb264c5998da7c7834204eae13e8e4477155b35&=&format=webp&quality=lossless'}),
 
 
-            
+
+
+
+                                new EmbedBuilder()
+
+                                    .setTitle(`${emeticonOneYCorps} PERVII KORPUS "BALTIYSKIY" ${emeticonGold}`)
+                                        .setURL('https://discord.com/channels/935566950568951838/1170768950498435184')
+                                        
+                                        .setAuthor({
+                                            name: 'Rossiyskaya Imperiya',
+                                            iconURL: 'https://cdn.discordapp.com/attachments/1315911289905873007/1322040239606206574/aas.gif',
+                                        })
+                                        
+                                        .setThumbnail('https://cdn.discordapp.com/attachments/1315292407860039830/1323969029387452486/1y_Korpus_Logo.png?ex=677d093e&is=677bb7be&hm=b2a0b0966943ab6afa861e66d53ae210b9a90ed152dc8d0b651fcb586ab75535&')
+                                        
+                                        .setDescription(`${emeticonOneY} First Korps is a long standing, veteran army of Russia, and stands as a symbol of reliability, ready to answer the call of duty at a moments notice, marching out in the name of the Tsar and Motherland!\n\n${emeticonOneY} Consisting of some of the most unique regiments in the whole nation, your experience will be nothing short of amazing within the Pervii Korpus due to our brotherhood and welcoming community in each regiment.`)
+                                        .setColor(0x7fffbf)
+
+                                            .setImage('https://media.discordapp.net/attachments/1293019259303235606/1312900628875313242/image.png?ex=677cfabe&is=677ba93e&hm=a0ccd49437586fb0b4bfefc28015af4ca73615116cbbb13a47db631904de31fb&=&format=webp&quality=lossless&width=1440&height=656')
+
+                                                .addFields(
+                                                    {
+                                                        name: `${emeticonSaintLieb} __**[S.P] SANKT-PETERSBURKSKIY GRENADERSKIY**__`, value: `-# ${emeticonSaint} The Regiment carries the storied legacy of the Russian Empire, orged in loyalty to the Motherland and Tsar. As the *oldest regiment* in Russia, we carry a rich history that dates back multiple nations. Born from the legendary St. Petersburg Grenadiers raised by Peter the Great in the early 1700s, we stand as a testament to Russia's indomitable spirit,  *unwavering, unbreakable, and eternal*.`
+                                                    },
+                                                    {
+                                                        name: `${emeticonTavLieb} __**[TAV] TAVRICHERSKIY GRENADERSKIY**__`, value: `-# ${emeticonTav} The Tavricheskiy Polk, or Tauride Polk, was established in the 18th century from Crimean recruits as palace guards at the Tauride Palace. Known for their resilience, they fought in key battles during the 1812 Patriotic War and the 6th Coalition War, including Borodino and The Defense of Moscow, and played a crucial role in the Battle of Leipzig.`
+                                                    },
+                                                    {
+                                                        name: `${emeticonRdlLieb} __**[RDL] RUSSISCH-DEUTSCHE LEGION**__`, value: `-# ${emeticonRdl} The Russian-German Legion was a military formation established during the Napoleonic Wars. It was composed primarily of German prisoners of war and deserters from the French army, as well as German volunteers recruited with Russian support. Founded in 1812, after Napoleon's disastrous invasion of Russia, the legion was part of Tsar Alexander I's effort to rally opposition to Napoleon's dominance in Europe.`
+                                                    },    
+                                                )
+
+                                                    .addFields(
+                                                        {
+                                                            name: `${emeticonMorgan} __KORPUS ORGANISATION__ ${emeticonSiver}`, value: `${emeticonSaintFlag} **[S.P] SANKT-PETERSBURKSKIY GRENADERSKIY**\n\n*[Saint Petersburg](https://discord.com/channels/935566950568951838/1170750001220169758)*\n\n${emeticonTavFlag}** [TAV] TAVRICHERSKIY GRENADERSKIY **\n\n*[Tavricheskiy](https://discord.com/channels/935566950568951838/1269175425221791774)*\n\n${emeticonRdlFlag} ** [RDL] RUSSISCH-DEUTSCHE LEGION **\n\n*[Russisch-deutsche Legion](https://discord.com/channels/935566950568951838/1315170462237593620)*`
+                                                        },
+                                                    )
+
+                                                        .setFooter({text: `S'NAMI BOG`, iconURL: 'https://media.discordapp.net/attachments/1315292407860039830/1323969029387452486/1y_Korpus_Logo.png?ex=677d093e&is=677bb7be&hm=b2a0b0966943ab6afa861e66d53ae210b9a90ed152dc8d0b651fcb586ab75535&=&format=webp&quality=lossless'})
+                                
+
 
         ];
 
