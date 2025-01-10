@@ -40,6 +40,18 @@ module.exports = {
                 const emeticonTavFlag = `<:tavFlag:1325812573089693770>`;
                 const emeticonRdlFlag = `<:rdlFlag:1325812555075289118>`;
 
+            // 2y
+
+            const emeticonTwoYCorps = '<:2yCorps:1327279340219531378>';
+            const emeticonTwoY = '<:2y:1327279337749086218> ';
+            const emeticonIzmail = '<:izmail:1327276890003738644>  ';
+            const emeticonIzmail2 = '<:izmail2:1327276890003738644>  ';
+            const emeticonTroit = '<:troit:1327276887193554974> ';
+            const emeticonVot2 = '<:vot2:1327276876816846879> ';
+            const emeticonHansa = '<:hansa1:1327278075997589600>';
+            const emeticonHansa2 = '<:hansa2:1327282504687816704>';
+            const emeticonHansaCross = '<:hansacross:1327282502645059736>';
+
         // Array of embeds
         const embeds = [
             new EmbedBuilder()
@@ -130,15 +142,51 @@ module.exports = {
 
                                                     .addFields(
                                                         {
-                                                            name: `${emeticonMorgan} __KORPUS ORGANISATION__ ${emeticonSiver}`, value: `${emeticonSaintFlag} **[S.P] SANKT-PETERSBURKSKIY GRENADERSKIY**\n\n*[Saint Petersburg](https://discord.com/channels/935566950568951838/1170750001220169758)*\n\n${emeticonTavFlag}** [TAV] TAVRICHERSKIY GRENADERSKIY **\n\n*[Tavricheskiy](https://discord.com/channels/935566950568951838/1269175425221791774)*\n\n${emeticonRdlFlag} ** [RDL] RUSSISCH-DEUTSCHE LEGION **\n\n*[Russisch-deutsche Legion](https://discord.com/channels/935566950568951838/1315170462237593620)*`
+                                                            name: `${emeticonMorgan} __KORPUS ORGANISATION__ ${emeticonSiver}\n`, value: `${emeticonSaintFlag} **[S.P] SANKT-PETERSBURKSKIY GRENADERSKIY**\n\n*[Saint Petersburg](https://discord.com/channels/935566950568951838/1170750001220169758)*\n\n${emeticonTavFlag}** [TAV] TAVRICHERSKIY GRENADERSKIY **\n\n*[Tavricheskiy](https://discord.com/channels/935566950568951838/1269175425221791774)*\n\n${emeticonRdlFlag} ** [RDL] RUSSISCH-DEUTSCHE LEGION **\n\n*[Russisch-deutsche Legion](https://discord.com/channels/935566950568951838/1315170462237593620)*`
                                                         },
                                                     )
 
-                                                        .setFooter({text: `S'NAMI BOG`, iconURL: 'https://media.discordapp.net/attachments/1315292407860039830/1323969029387452486/1y_Korpus_Logo.png?ex=677d093e&is=677bb7be&hm=b2a0b0966943ab6afa861e66d53ae210b9a90ed152dc8d0b651fcb586ab75535&=&format=webp&quality=lossless'})
+                                                        .setFooter({text: `S'NAMI BOG`, iconURL: 'https://media.discordapp.net/attachments/1315292407860039830/1323969029387452486/1y_Korpus_Logo.png?ex=677d093e&is=677bb7be&hm=b2a0b0966943ab6afa861e66d53ae210b9a90ed152dc8d0b651fcb586ab75535&=&format=webp&quality=lossless'}),
                                 
+                                                    
+
+                                                        new EmbedBuilder()
+
+                                                        .setTitle(`${emeticonTwoYCorps} VTOROY KORPUS "CHERNOMORSKIY KORPUS" ${emeticonVot2}`)
+                                                        .setURL('https://discord.com/channels/935566950568951838/1170768950498435184')
+                                                        
+                                                        .setAuthor({
+                                                            name: 'Rossiyskaya Imperiya',
+                                                            iconURL: 'https://cdn.discordapp.com/attachments/1315911289905873007/1322040239606206574/aas.gif',
+                                                        })
+
+                                                            .setThumbnail(`https://media.discordapp.net/attachments/1315292407860039830/1323969029894836245/2y_Korpus_Logo.png?ex=67824f3e&is=6780fdbe&hm=2f3953c9daf5a67238f46b6d51f5de3b4a56e4486d7c3fa21b594957b62c7ba5&=&format=webp&quality=lossless`)
+                                                            .setDescription(`${emeticonTwoY} The Second Korps is recently refurbished and hungry for victory, hailing from the coastlines of the Black Sea, they house the newer additions to the Russian Army. Their standards represent the ferocity and dedication of Russian soldiers marching out in the name of the Tsar and Motherland!\n\n${emeticonTwoY}  The Vtoroy Korpus houses  the most unique regiments of Russia, each of which have distinguished in service of the Tsar.`)
+                                                            .setColor(0x7fffbf)
 
 
-        ];
+                                                                    .setImage(`https://media.discordapp.net/attachments/1269167601523884063/1292616894104211467/image.png?ex=67824a0b&is=6780f88b&hm=3c896495a081e07a04e719ac71a41c66abdcab9d953372841c6bacbfd93423d9&=&format=webp&quality=lossless`)
+
+                                                                        .addFields(
+                                                                            {
+                                                                                name: `${emeticonHansa} __**[HAN] HANSEATISCHE LEGION**__`, value: `-# ${emeticonHansaCross} The Hanseatic Legion was a group of units brought together by the purpose of defending the Hanseatic cities of **Bremen, Lübeck, and Hamburg** from French invasion. The legion successfully defended cities from Vandammeand Davout and also participated in battles outside of the cities helping drive the French out of northern Germany they ended their campaign by eventually merging with the Army of the North with the discretion of General Wallmoden.`
+                                                                            },
+                                                                            {
+                                                                                name: `${emeticonTroit} __**[TR] TROITSK PEKHOTNYY POLK**__`, value: `-# ${emeticonTroit} The Troitsk Regiment, officially known as the Troitsk Infantry Regiment, was a prominent Russian military unit established in the early 19th century. The Troitsk Regiment stands as **a testament to the commitment and courage** of Russian soldiers during one of Europe's most tumultuous periods.`
+                                                                            },
+                                                                            {
+                                                                                name: `${emeticonIzmail} __**[CAZ] REGIMENTUL DE INFANTERIE "IZMAIL"**__`, value: `-# ${emeticonIzmail} The Izmailskiy Pehktonyy Polk or the "Romanian Legion" is an **venerable & very highly prestigious regiment** from the Napoleonic Wars. After its Commanding Officer, weakbogdanx1 made it one of the most feared regiments in the Russian Army. It has showed the entire community that, it is not a force to be messed with!`
+                                                                            }
+                                                                        )
+
+                                                                            .addFields(
+                                                                                {
+                                                                                    name: `${emeticonVot2} __KORPUS ORGANISATION__ ${emeticonMorgan} \n`, value: `${emeticonSiver} AS/OC. \n${emeticonHansa2} **[HAN] HANSEATISCHE LEGION**\n\n[*Bremen*](https://discord.com/channels/935566950568951838/1239366567376977920)\n[*Lübeck*](https://discord.com/channels/935566950568951838/1245615222790688768) ${emeticonSiver} \n\n${emeticonTroit} **[TR] TROITSK PEKHOTNYY POLK**\n\n[*Georgia*](https://discord.com/channels/935566950568951838/1239292326896074844)\n\n${emeticonIzmail2} **[CAZ] REGIMENTUL DE INFANTERIE "IZMAIL"**\n\n[*Romania*](https://discord.com/channels/935566950568951838/1276207350575009843)`
+                                                                                },
+                                                                            )
+
+                                                                            .setFooter({text: `SLAVSYA OTECHESTVA`, iconURL: 'https://media.discordapp.net/attachments/1315292407860039830/1323969029894836245/2y_Korpus_Logo.png?ex=67824f3e&is=6780fdbe&hm=2f3953c9daf5a67238f46b6d51f5de3b4a56e4486d7c3fa21b594957b62c7ba5&=&format=webp&quality=lossless'}),
+                                                                        ];
 
         // Buttons
         const nextPage = new ButtonBuilder()
